@@ -1,0 +1,104 @@
+
+["Fazbears Wrath Mod Configuration"]
+	#Base movement speed of Fredbear (Default: 0.35, Range: 0.1–1.0)
+	#Range: 0.1 ~ 1.0
+	fazbearswrathSpeed = 0.35
+
+	#--- Spawn Settings ---
+	["Fazbears Wrath Mod Configuration".spawn]
+		#Minimum seconds before a spawn attempt. Random value is picked between Min and Max.
+		#Range: 10.0 ~ 3600.0
+		spawnTimeMin = 350.0
+		#Maximum seconds before a spawn attempt. Must be >= spawnTimeMin.
+		#Range: 10.0 ~ 7200.0
+		spawnTimeMax = 600.0
+		#Spawn chance denominator. A random integer in [1, spawnChance] is rolled — spawn happens only on 1.
+		#Lower = more frequent. 1 = guaranteed spawn every timer cycle. 3 = ~33% per cycle.
+		#Range: 1.0 ~ 100.0
+		spawnChance = 3.0
+		#Maximum spawn distance from the player in blocks. Minimum effective value is 20.
+		#Range: 20.0 ~ 512.0
+		spawnMaxDistance = 100.0
+		#If true, the random ambient timer spawn is muted during the first in-game day (guarantees still fire).
+		noFirstDaySpawn = false
+		#If true, the wandering Fredbears only spawn in the Overworld.
+		spawnOverworldOnly = true
+		#If true, the wandering spawn is paused while a scripted event (nightmare/curtain/play) is running for the player.
+		spawnPauseDuringEvents = true
+		#If true, at least one chaser-type Fredbear is guaranteed to spawn each night (if none is already near the player).
+		guaranteedNightSpawn = false
+		#If true, at least one Fake or Watcher is guaranteed to spawn each day.
+		guaranteedDaySpawn = true
+		#Seconds after joining/respawning before anything may spawn (so it isn't instant on world entry).
+		#Range: 0 ~ 1200
+		spawnJoinGraceSeconds = 60
+		#Minutes from world creation during which NOTHING spawns at all (safe start).
+		#Range: 0 ~ 120
+		worldGraceMinutes = 10
+		#Spawn-interval multiplier underground (Y<=60). 0.5 = twice as frequent in caves.
+		#Range: 0.1 ~ 2.0
+		caveSpawnFactor = 0.5
+		#Max mod entities within 48 blocks of a player before wandering spawns stop (prevents pile-up in multiplayer).
+		#Range: 1 ~ 50
+		nearbyEntityCap = 5
+
+	#--- Nightmare Event (sleep -> forest) ---
+	["Fazbears Wrath Mod Configuration".nightmare]
+		#Enable the sleep-triggered nightmare/forest event.
+		nightmareEnabled = true
+		#Chance denominator when sleeping at night: a 1/N roll triggers the nightmare. Lower = more often.
+		#Range: 1 ~ 1000
+		nightmareSleepChance = 10
+		#Seconds after a nightmare during which another one can't trigger (so it can't fire twice back-to-back).
+		#Range: 0 ~ 3600
+		nightmareCooldownSeconds = 120
+
+	#--- Night Events (Curtain Call / Let's Play, ~once per interval at night) ---
+	["Fazbears Wrath Mod Configuration".nightEvents]
+		#Enable the scheduled night events (picks Curtain Call or Let's Play at random).
+		nightEventsEnabled = true
+		#In-game days between scheduled night events.
+		#Range: 0.5 ~ 60.0
+		nightEventIntervalDays = 5.0
+		#Allow the Golden Fredbear 'Curtain Call' event to be picked.
+		curtainCallEnabled = true
+		#Allow the 'Let's Play?' (guess the direction) event to be picked.
+		playEventEnabled = true
+
+	#--- Let's Play? Event ---
+	["Fazbears Wrath Mod Configuration".playEvent]
+		#Number of stages to clear to survive.
+		#Range: 1 ~ 20
+		playStages = 5
+		#Mistakes allowed: each wrong/late answer still advances a stage, but this many mistakes ends it (death).
+		#Range: 1 ~ 10
+		playMaxMistakes = 3
+
+	#--- Nightmare Flashlight ---
+	["Fazbears Wrath Mod Configuration".nightmareFlashlight]
+		#Charge (0-100) required to use the flash. ~78.6 is battery level 6 of 7.
+		#Range: 1.0 ~ 100.0
+		flashThreshold = 78.6
+		#Charge drained per tick while the flashlight is on.
+		#Range: 0.0 ~ 10.0
+		chargeDrain = 0.75
+		#Charge gained per R shake.
+		#Range: 0.5 ~ 100.0
+		chargeShake = 7.0
+		#Distance (blocks) from spawn to the goal cross.
+		#Range: 40 ~ 512
+		goalDistance = 160
+
+	#--- Chase Settings ---
+	["Fazbears Wrath Mod Configuration".chase]
+		#Minimum chase duration in minutes before Fredbear vanishes on its own.
+		#Range: 0.1 ~ 30.0
+		chaseTimeMin = 2.0
+		#Maximum chase duration in minutes. Must be >= chaseTimeMin.
+		#Range: 0.1 ~ 60.0
+		chaseTimeMax = 4.0
+		#If true, blocks broken by Fredbear during a chase are restored when it vanishes.
+		regenerateBlocks = true
+		#If true, a vignette fades in at screen edges the closer Fredbear is.
+		chaseVignette = true
+

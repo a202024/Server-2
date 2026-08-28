@@ -1,0 +1,756 @@
+[28Aug2026 02:32:22.865] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeserver, --fml.forgeVersion, 47.3.7, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, nogui]
+[28Aug2026 02:32:22.869] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.18 by Ubuntu; OS Linux arch amd64 version 6.8.0-1052-azure
+[28Aug2026 02:32:23.450] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgeserver
+[28Aug2026 02:32:23.499] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/workspaces/Server-2/servidor_minecraft/libraries/org/spongepowered/mixin/0.8.5/mixin-0.8.5.jar%2365!/ Service=ModLauncher Env=SERVER
+[28Aug2026 02:32:23.817] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Server-2/servidor_minecraft/libraries/net/minecraftforge/fmlcore/1.20.1-47.3.7/fmlcore-1.20.1-47.3.7.jar is missing mods.toml file
+[28Aug2026 02:32:23.819] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Server-2/servidor_minecraft/libraries/net/minecraftforge/javafmllanguage/1.20.1-47.3.7/javafmllanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[28Aug2026 02:32:23.827] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Server-2/servidor_minecraft/libraries/net/minecraftforge/lowcodelanguage/1.20.1-47.3.7/lowcodelanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[28Aug2026 02:32:23.829] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file /workspaces/Server-2/servidor_minecraft/libraries/net/minecraftforge/mclanguage/1.20.1-47.3.7/mclanguage-1.20.1-47.3.7.jar is missing mods.toml file
+[28Aug2026 02:32:24.192] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 9 dependencies adding them to mods collection
+[28Aug2026 02:32:26.241] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[28Aug2026 02:32:26.448] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [ca.spottedleaf.starlight.mixin.MixinConnector]
+[28Aug2026 02:32:26.450] [main/INFO] [mixin/]: Successfully loaded Mixin Connector [org.tlauncher.MixinConnector]
+[28Aug2026 02:32:26.452] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeserver' with arguments [nogui]
+[28Aug2026 02:32:26.817] [main/INFO] [ModernFix/]: Loaded configuration file for ModernFix 5.27.66+mc1.20.1: 110 options available, 0 override(s) found
+[28Aug2026 02:32:26.818] [main/INFO] [ModernFix/]: Applying Nashorn fix
+[28Aug2026 02:32:26.837] [main/INFO] [ModernFix/]: Applied Forge config corruption patch
+[28Aug2026 02:32:28.577] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/player/AbstractClientPlayer for invalid dist DEDICATED_SERVER
+[28Aug2026 02:32:28.578] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/player/AbstractClientPlayer (java.lang.RuntimeException: Attempted to load class net/minecraft/client/player/AbstractClientPlayer for invalid dist DEDICATED_SERVER)
+[28Aug2026 02:32:28.579] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.player.AbstractClientPlayer was not found tlskincape-mixins.json:MixinAbstractPlayer
+[28Aug2026 02:32:28.580] [main/ERROR] [net.minecraftforge.fml.loading.RuntimeDistCleaner/DISTXFORM]: Attempted to load class net/minecraft/client/gui/screens/TitleScreen for invalid dist DEDICATED_SERVER
+[28Aug2026 02:32:28.581] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/gui/screens/TitleScreen (java.lang.RuntimeException: Attempted to load class net/minecraft/client/gui/screens/TitleScreen for invalid dist DEDICATED_SERVER)
+[28Aug2026 02:32:28.581] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.gui.screens.TitleScreen was not found tlskincape-mixins.json:MixinMainMenu
+[28Aug2026 02:32:28.583] [main/WARN] [mixin/]: Error loading class: net/minecraft/client/model/PlayerModel (java.lang.ClassNotFoundException: net.minecraft.client.model.PlayerModel)
+[28Aug2026 02:32:28.583] [main/WARN] [mixin/]: @Mixin target net.minecraft.client.model.PlayerModel was not found tlskincape-mixins.json:MixinPlayerModel
+[28Aug2026 02:32:28.713] [main/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.5.3).
+[28Aug2026 02:32:29.391] [main/INFO] [net.minecraft.server.Bootstrap/]: ModernFix reached bootstrap stage (8.997 s after launch)
+[28Aug2026 02:32:29.660] [main/WARN] [mixin/]: @Final field delegatesByName:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[28Aug2026 02:32:29.661] [main/WARN] [mixin/]: @Final field delegatesByValue:Ljava/util/Map; in modernfix-modernfix.mixins.json:perf.forge_registry_alloc.ForgeRegistryMixin should be final
+[28Aug2026 02:32:29.778] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into getOpacityIfCached from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
+[28Aug2026 02:32:29.779] [main/INFO] [ModernFix/]: Injecting BlockStateBase cache population hook into isConditionallyFullOpaque from ca.spottedleaf.starlight.mixin.common.blockstate.BlockStateBaseMixin
+[28Aug2026 02:32:30.954] [main/INFO] [net.minecraft.server.Bootstrap/]: Vanilla bootstrap took 1530 milliseconds
+[28Aug2026 02:32:33.584] [main/WARN] [mixin/]: Mixin alexscaves.mixins.json:SwampHutPieceMixin has multiple constructors, (Lnet/minecraft/world/level/levelgen/structure/pieces/StructurePieceType;IIIIIILnet/minecraft/core/Direction;)V was selected
+
+[28Aug2026 02:32:34.989] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.3.7, for MC 1.20.1 with MCP 20230612.114412
+[28Aug2026 02:32:34.989] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.3.7 Initialized
+[28Aug2026 02:32:38.157] [main/INFO] [ModernFix/]: Bypassed Mojang DFU
+[28Aug2026 02:32:38.158] [main/INFO] [ModernFix/]: Instantiating Mojang DFU
+[28Aug2026 02:32:38.835] [main/WARN] [net.minecraft.network.syncher.SynchedEntityData/]: defineId called for: class com.github.alexmodguy.alexscaves.server.entity.living.TremorzillaEntity from class com.github.alexmodguy.alexscaves.server.entity.living.LicowitchEntity
+[28Aug2026 02:32:39.592] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Starting version check at https://forge.curseupdate.com/32274/journeymap
+[28Aug2026 02:32:39.796] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [journeymap] Found status: OUTDATED Current: 1.20.1-6.0.0-beta.5 Target: 1.20.1-6.0.2
+[28Aug2026 02:32:39.796] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [cfm] Starting version check at https://mrcrayfish.com/modupdatejson?id=cfm
+[28Aug2026 02:32:39.804] [main/INFO] [terrablender/]: Registered region minecraft:overworld to index 0 for type OVERWORLD
+[28Aug2026 02:32:39.804] [main/INFO] [terrablender/]: Registered region minecraft:nether to index 0 for type NETHER
+[28Aug2026 02:32:39.804] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_primary to index 1 for type OVERWORLD
+[28Aug2026 02:32:39.804] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_secondary to index 2 for type OVERWORLD
+[28Aug2026 02:32:39.805] [main/INFO] [terrablender/]: Registered region biomesoplenty:overworld_rare to index 3 for type OVERWORLD
+[28Aug2026 02:32:39.805] [main/INFO] [terrablender/]: Registered region biomesoplenty:nether_common to index 1 for type NETHER
+[28Aug2026 02:32:39.805] [main/INFO] [terrablender/]: Registered region biomesoplenty:nether_rare to index 2 for type NETHER
+[28Aug2026 02:32:40.039] [Forge Version Check/WARN] [net.minecraftforge.fml.VersionChecker/]: Failed to process update information
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.Gson.fromJson(Gson.java:1226) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1124) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1034) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:969) ~[gson-2.10.jar%2372!/:?]
+	at net.minecraftforge.fml.VersionChecker$1.process(VersionChecker.java:183) ~[fmlcore-1.20.1-47.3.7.jar%23158!/:?]
+	at java.lang.Iterable.forEach(Iterable.java:75) ~[?:?]
+	at net.minecraftforge.fml.VersionChecker$1.run(VersionChecker.java:114) ~[fmlcore-1.20.1-47.3.7.jar%23158!/:?]
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was STRING at line 1 column 1 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:393) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:182) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter.read(MapTypeAdapterFactory.java:144) ~[gson-2.10.jar%2372!/:?]
+	at com.google.gson.Gson.fromJson(Gson.java:1214) ~[gson-2.10.jar%2372!/:?]
+	... 6 more
+[28Aug2026 02:32:40.040] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[28Aug2026 02:32:40.117] [Forge Version Check/INFO] [net.minecraftforge.fml.VersionChecker/]: [forge] Found status: OUTDATED Current: 47.3.7 Target: 47.4.10
+[28Aug2026 02:32:40.257] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.vanilla.VanillaPlugin
+[28Aug2026 02:32:40.273] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.universal.UniversalPlugin
+[28Aug2026 02:32:40.276] [modloading-worker-0/INFO] [Jade/]: Start loading plugin at snownee.jade.addon.core.CorePlugin
+[28Aug2026 02:32:40.307] [main/INFO] [citadel/]: adding citadel surface rules via terrablender...
+[28Aug2026 02:32:40.308] [main/INFO] [citadel/]: Added 0 vanilla biome surface rule types via terrablender
+[28Aug2026 02:32:40.308] [main/INFO] [citadel/]: Added 1 modded biome surface rule types via terrablender
+[28Aug2026 02:32:40.884] [main/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[28Aug2026 02:32:41.194] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/workspaces/Server-2/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23157!/assets/.mcassetsroot' uses unexpected schema
+[28Aug2026 02:32:41.195] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/workspaces/Server-2/servidor_minecraft/libraries/net/minecraft/server/1.20.1-20230612.114412/server-1.20.1-20230612.114412-srg.jar%23157!/data/.mcassetsroot' uses unexpected schema
+[28Aug2026 02:32:42.640] [main/INFO] [com.github.alexthe666.alexsmobs.AlexsMobs/]: Adding datapack listener capsid_recipes
+[28Aug2026 02:32:43.364] [main/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 12 recipes
+[28Aug2026 02:32:43.493] [main/INFO] [net.minecraft.advancements.AdvancementList/]: Loaded 2731 advancements
+[28Aug2026 02:32:43.501] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 14 curio slots
+[28Aug2026 02:32:43.504] [main/INFO] [top.theillusivec4.curios.Curios/]: Loaded 1 curio entities
+[28Aug2026 02:32:43.545] [main/WARN] [ModernFix/]: Initial datapack load took 2.321 s
+[28Aug2026 02:32:43.651] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting minecraft server version 1.20.1
+[28Aug2026 02:32:43.652] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Loading properties
+[28Aug2026 02:32:43.652] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Default game type: SURVIVAL
+[28Aug2026 02:32:43.652] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[28Aug2026 02:32:43.728] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Starting Minecraft server on *:25565
+[28Aug2026 02:32:43.753] [Server thread/INFO] [net.minecraft.server.network.ServerConnectionListener/]: Using epoll channel type
+[28Aug2026 02:32:43.833] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: **** SERVER IS RUNNING IN OFFLINE/INSECURE MODE!
+[28Aug2026 02:32:43.834] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: The server will make no attempt to authenticate usernames. Beware.
+[28Aug2026 02:32:43.834] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: While this makes the game possible to play without internet access, it also opens up the ability for hackers to connect with any username they choose.
+[28Aug2026 02:32:43.834] [Server thread/WARN] [net.minecraft.server.dedicated.DedicatedServer/]: To change this, set "online-mode" to "true" in the server.properties file.
+[28Aug2026 02:32:43.854] [Server thread/INFO] [journeymap/]: Loading JourneyMap Forge Configs
+[28Aug2026 02:32:43.957] [Server thread/INFO] [Framework/]: Loading server configs...
+[28Aug2026 02:32:43.984] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:the_nether
+[28Aug2026 02:32:44.481] [Server thread/INFO] [terrablender/]: Initialized TerraBlender biomes for level stem minecraft:overworld
+[28Aug2026 02:32:44.487] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Preparing level "world"
+[28Aug2026 02:32:44.856] [Thread-0/INFO] [ModernFix/]: Please use /mfsrc to reload any changed mod config files
+[28Aug2026 02:32:44.916] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[28Aug2026 02:32:45.984] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Aug2026 02:32:45.985] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Aug2026 02:32:45.985] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[28Aug2026 02:32:46.462] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 19%
+[28Aug2026 02:32:46.921] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 79%
+[28Aug2026 02:32:47.065] [Server thread/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2145 ms
+[28Aug2026 02:32:47.065] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer/]: Done (3.215s)! For help, type "help"
+[28Aug2026 02:32:47.118] [Server thread/INFO] [net.minecraftforge.server.permission.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[28Aug2026 02:32:47.120] [Server thread/INFO] [journeymap/]: Loaded null for service interface journeymap.api.services.WebMapService
+[28Aug2026 02:32:47.122] [Server thread/INFO] [journeymap/]: Loaded journeymap.common.helpers.ForgeClientHooks@6c016bb4 for service interface journeymap.api.services.ClientPlatformService
+[28Aug2026 02:32:47.124] [Server thread/INFO] [journeymap/]: Loaded journeymap.common.helpers.ForgeHooks@6787c15c for service interface journeymap.api.services.CommonPlatformService
+[28Aug2026 02:32:47.134] [Server thread/INFO] [journeymap/]: Found @JourneyMapPlugin: journeymap.api.plugins.LoadedChunkOverlayPlugin
+[28Aug2026 02:32:47.141] [Server thread/INFO] [journeymap/]: Initialized IJourneyMapPlugin as:journeymap.api.plugins.LoadedChunkOverlayPlugin: for:journeymap_chunk_overlay
+[28Aug2026 02:32:47.183] [Server thread/INFO] [com.github.alexthe666.iceandfire.IceAndFire/]: {iceandfire:fire_dragon_roost=true, iceandfire:fire_lily=true, iceandfire:spawn_dragon_skeleton_fire=true, iceandfire:lightning_dragon_roost=true, iceandfire:spawn_dragon_skeleton_lightning=true, iceandfire:ice_dragon_roost=true, iceandfire:ice_dragon_cave=true, iceandfire:lightning_dragon_cave=true, iceandfire:cyclops_cave=true, iceandfire:spawn_wandering_cyclops=true, iceandfire:spawn_sea_serpent=true, iceandfire:frost_lily=true, iceandfire:hydra_cave=true, iceandfire:lightning_lily=true, iceandfire:pixie_village=true, iceandfire:myrmex_hive_jungle=true, iceandfire:myrmex_hive_desert=true, iceandfire:silver_ore=true, iceandfire:siren_island=true, iceandfire:spawn_dragon_skeleton_ice=true, iceandfire:spawn_stymphalian_bird=true, iceandfire:fire_dragon_cave=true, iceandfire:sapphire_ore=true, iceandfire:spawn_hippocampus=true, iceandfire:spawn_death_worm=true}
+[28Aug2026 02:32:47.184] [Server thread/INFO] [com.github.alexthe666.iceandfire.IceAndFire/]: {TROLL_S=true, HIPPOGRYPH=true, AMPHITHERE=true, COCKATRICE=true, TROLL_M=true, DREAD_LICH=true, TROLL_F=true}
+[28Aug2026 02:32:47.189] [Server thread/WARN] [ModernFix/]: Dedicated server took 26.796 seconds to load
+[28Aug2026 02:32:47.467] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:logless_tree/spruce' in chunk [-191, -389], discarding
+[28Aug2026 02:32:47.475] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-197, -386], discarding
+[28Aug2026 02:32:47.480] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-196, -386], discarding
+[28Aug2026 02:32:47.481] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:villagepath_4w' in chunk [-196, -386], discarding
+[28Aug2026 02:32:47.483] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-195, -386], discarding
+[28Aug2026 02:32:47.484] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:villagepath_4w' in chunk [-195, -386], discarding
+[28Aug2026 02:32:47.486] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-194, -386], discarding
+[28Aug2026 02:32:47.486] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:villagepath_4w' in chunk [-194, -386], discarding
+[28Aug2026 02:32:47.488] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:villagepath_4w' in chunk [-193, -386], discarding
+[28Aug2026 02:32:47.490] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:villagepath_4w' in chunk [-192, -386], discarding
+[28Aug2026 02:32:47.493] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:villagepath_4w' in chunk [-191, -386], discarding
+[28Aug2026 02:32:47.497] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-201, -389], discarding
+[28Aug2026 02:32:47.659] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-175, -365], discarding
+[28Aug2026 02:32:47.665] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-175, -364], discarding
+[28Aug2026 02:32:47.670] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-175, -363], discarding
+[28Aug2026 02:32:47.673] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'from_the_caves:miners_mine' in chunk [-175, -362], discarding
+[28Aug2026 02:32:47.866] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-201, -390], discarding
+[28Aug2026 02:32:47.923] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-165, -365], discarding
+[28Aug2026 02:32:47.926] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:32:47.926] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-165, -364], discarding
+[28Aug2026 02:32:47.949] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-172, -369], discarding
+[28Aug2026 02:32:47.953] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-171, -369], discarding
+[28Aug2026 02:33:16.577] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Uzielcrak77[/10.13.238.52:56973] logged in with entity id 140 at (-7009.6368159066305, -10.409524865272548, -5093.4927982124445)
+[28Aug2026 02:33:16.606] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Uzielcrak77
+[28Aug2026 02:33:16.649] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 joined the game
+[28Aug2026 02:33:16.771] [Server thread/INFO] [Jade/]: Syncing config to Uzielcrak77 (21975d2d-8fb0-3c48-b8e7-30fe49620982)
+[28Aug2026 02:33:25.591] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Uzielcrak77 moved too quickly! 0.0,-11.064980402202279,0.0
+[28Aug2026 02:36:51.342] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jr_dark[/10.13.238.142:59345] logged in with entity id 2360 at (-6994.699999988079, -22.0, -5026.046245788543)
+[28Aug2026 02:36:51.352] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Jr_dark
+[28Aug2026 02:36:51.365] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark joined the game
+[28Aug2026 02:36:51.400] [Server thread/INFO] [Jade/]: Syncing config to Jr_dark (e4a447b7-80d3-39bc-aee9-7217339ad2d7)
+[28Aug2026 02:37:46.537] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [The Secret Ingredient]
+[28Aug2026 02:39:07.671] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [A Day at the Fair]
+[28Aug2026 02:39:13.118] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 02:39:22.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [It Belongs in a Museum]
+[28Aug2026 02:39:22.496] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Removed 227 item(s) from player Uzielcrak77]
+[28Aug2026 02:40:14.812] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [Biome Reactors]
+[28Aug2026 02:41:07.514] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was forced to bite down on a gumball by Gumbeeper
+[28Aug2026 02:41:10.325] [Server thread/WARN] [net.minecraft.world.level.block.entity.BlockEntity/]: Skipping BlockEntity with id tacz:gun_smith_table
+[28Aug2026 02:41:10.326] [Server thread/WARN] [net.minecraft.world.level.block.entity.BlockEntity/]: Skipping BlockEntity with id tacz:gun_smith_table
+[28Aug2026 02:41:10.326] [Server thread/WARN] [net.minecraft.world.level.block.entity.BlockEntity/]: Skipping BlockEntity with id tacz:gun_smith_table
+[28Aug2026 02:41:10.327] [Server thread/WARN] [net.minecraft.world.level.block.entity.BlockEntity/]: Skipping BlockEntity with id tacz:gun_smith_table
+[28Aug2026 02:41:10.327] [Server thread/WARN] [net.minecraft.world.level.block.entity.BlockEntity/]: Skipping BlockEntity with id tacz:gun_smith_table
+[28Aug2026 02:41:31.115] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 02:41:41.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 hit the ground too hard
+[28Aug2026 02:46:51.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 02:46:53.309] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [Spear Mint]
+[28Aug2026 02:47:01.604] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [It Belongs in a Museum]
+[28Aug2026 02:47:08.059] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [Spear Mint]
+[28Aug2026 02:48:20.356] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [Choc-o-Block]
+[28Aug2026 02:48:48.205] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 02:53:29.650] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 02:54:23.908] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark fell from a high place
+[28Aug2026 02:54:30.586] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -7288.5 -47.0 -5167.5 minecraft:overworld
+[28Aug2026 02:54:41.026] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 02:54:44.024] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 02:54:47.538] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 02:56:05.715] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was doomed to fall
+[28Aug2026 02:57:26.821] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 02:57:57.161] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 02:57:57.558] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [The Cyclops]
+[28Aug2026 02:58:30.525] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:58:30.525] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-274, -39], discarding
+[28Aug2026 02:58:30.526] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-275, -39], discarding
+[28Aug2026 02:58:33.333] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-259, -38], discarding
+[28Aug2026 02:58:33.335] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:58:33.335] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-258, -38], discarding
+[28Aug2026 02:58:36.079] [Server thread/WARN] [net.minecraft.world.entity.EntityType/]: Skipping Entity with id the_one_who_watches:toww_hanging
+[28Aug2026 02:58:38.628] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-256, -36], discarding
+[28Aug2026 02:58:38.630] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-255, -36], discarding
+[28Aug2026 02:58:43.780] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-263, -35], discarding
+[28Aug2026 02:58:43.782] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-262, -35], discarding
+[28Aug2026 02:58:43.788] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-256, -35], discarding
+[28Aug2026 02:58:43.789] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:58:43.789] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-255, -35], discarding
+[28Aug2026 02:58:59.682] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-277, -37], discarding
+[28Aug2026 02:59:02.124] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-278, -37], discarding
+[28Aug2026 02:59:07.325] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-280, -39], discarding
+[28Aug2026 02:59:07.330] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:59:07.330] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-280, -38], discarding
+[28Aug2026 02:59:09.940] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-281, -39], discarding
+[28Aug2026 02:59:09.979] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-281, -38], discarding
+[28Aug2026 02:59:26.644] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-287, -57], discarding
+[28Aug2026 02:59:26.645] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-287, -55], discarding
+[28Aug2026 02:59:26.646] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_tunnel/2x2_tunnel' in chunk [-287, -55], discarding
+[28Aug2026 02:59:26.646] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:59:26.647] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_tunnel/2x2_tunnel
+[28Aug2026 02:59:26.647] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-287, -56], discarding
+[28Aug2026 02:59:26.647] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_tunnel/2x2_tunnel' in chunk [-287, -56], discarding
+[28Aug2026 02:59:26.648] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_tunnel/2x2_tunnel' in chunk [-287, -54], discarding
+[28Aug2026 02:59:26.697] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:logless_tree/oak' in chunk [-287, -40], discarding
+[28Aug2026 02:59:26.765] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:logless_tree/oak
+[28Aug2026 02:59:26.765] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:logless_tree/oak' in chunk [-287, -39], discarding
+[28Aug2026 02:59:32.376] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-288, -56], discarding
+[28Aug2026 02:59:32.379] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-288, -57], discarding
+[28Aug2026 02:59:34.038] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-286, -68], discarding
+[28Aug2026 02:59:42.140] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:59:42.140] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-286, -71], discarding
+[28Aug2026 02:59:42.160] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-287, -71], discarding
+[28Aug2026 02:59:45.045] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-287, -72], discarding
+[28Aug2026 02:59:45.049] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-286, -72], discarding
+[28Aug2026 02:59:51.823] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 02:59:51.823] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-288, -74], discarding
+[28Aug2026 03:00:08.671] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark lost connection: Timed out
+[28Aug2026 03:00:08.672] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark left the game
+[28Aug2026 03:00:30.466] [Server thread/WARN] [net.minecraft.world.entity.EntityType/]: Skipping Entity with id the_one_who_watches:toww_hanging
+[28Aug2026 03:00:31.619] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jr_dark[/10.13.238.142:59503] logged in with entity id 15754 at (-7294.217698568105, -36.0, -5155.063066344012)
+[28Aug2026 03:00:31.625] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Jr_dark
+[28Aug2026 03:00:31.633] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark joined the game
+[28Aug2026 03:00:31.644] [Server thread/INFO] [Jade/]: Syncing config to Jr_dark (e4a447b7-80d3-39bc-aee9-7217339ad2d7)
+[28Aug2026 03:00:37.830] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-288, -75], discarding
+[28Aug2026 03:00:37.831] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:00:37.832] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-288, -74], discarding
+[28Aug2026 03:00:41.266] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-289, -75], discarding
+[28Aug2026 03:00:41.270] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-289, -74], discarding
+[28Aug2026 03:01:14.165] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was killed
+[28Aug2026 03:01:14.166] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed Uzielcrak77]
+[28Aug2026 03:03:26.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 03:03:35.035] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was killed
+[28Aug2026 03:03:35.035] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed Uzielcrak77]
+[28Aug2026 03:03:38.246] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was killed
+[28Aug2026 03:03:38.247] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Killed Jr_dark]
+[28Aug2026 03:05:37.954] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> bro se me salio del discord
+[28Aug2026 03:05:46.101] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> naguara mno
+[28Aug2026 03:05:54.782] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> alli voy xdd
+[28Aug2026 03:05:55.118] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] ere gay mno
+[28Aug2026 03:06:06.181] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xd
+[28Aug2026 03:06:48.248] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Unemployed'/19250, l='ServerLevel[world]', x=-4202.68, y=65.00, z=-830.05] died, message: 'Unemployed hit the ground too hard whilst trying to escape Zombie'
+[28Aug2026 03:08:26.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [Biome Reactors]
+[28Aug2026 03:09:25.265] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was slain by Jr_dark
+[28Aug2026 03:10:41.601] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [Not Today, Thank You]
+[28Aug2026 03:11:05.301] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [The Cyclops]
+[28Aug2026 03:12:08.174] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 19333ms or 386 ticks behind
+[28Aug2026 03:12:44.552] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 18312ms or 366 ticks behind
+[28Aug2026 03:12:44.566] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[28Aug2026 03:12:44.567] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: f<--[HERE]
+[28Aug2026 03:12:44.567] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[28Aug2026 03:12:44.567] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: r<--[HERE]
+[28Aug2026 03:12:44.569] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 03:14:14.157] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -4025.5 -24.0 -2379.5 minecraft:overworld
+[28Aug2026 03:14:17.484] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'tacz:tacz.bullet_resistance'
+[28Aug2026 03:14:20.977] [Server thread/INFO] [journeymap/]: Uzielcrak77 teleported to -2788.5 70.0 -4961.5 minecraft:overworld
+[28Aug2026 03:14:24.634] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -345.5 67.0 3106.5 minecraft:overworld
+[28Aug2026 03:14:30.621] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-184, -298], discarding
+[28Aug2026 03:14:30.622] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-183, -298], discarding
+[28Aug2026 03:14:30.622] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-182, -298], discarding
+[28Aug2026 03:14:30.770] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-186, -298], discarding
+[28Aug2026 03:14:30.773] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-185, -298], discarding
+[28Aug2026 03:14:36.955] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [Not Today, Thank You]
+[28Aug2026 03:14:37.836] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 03:15:08.933] [Server thread/WARN] [net.minecraft.world.entity.ai.attributes.AttributeMap/]: Ignoring unknown attribute 'tacz:tacz.bullet_resistance'
+[28Aug2026 03:16:54.883] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 03:17:04.509] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 03:18:39.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 03:18:42.597] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was slain by Dread Ghoul
+[28Aug2026 03:18:51.755] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 03:19:08.249] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 03:19:43.398] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was slain by Dread Knight
+[28Aug2026 03:19:51.457] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 03:19:56.647] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was slain by Dread Knight
+[28Aug2026 03:20:04.817] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -345.5 67.0 3106.5 minecraft:overworld
+[28Aug2026 03:20:15.172] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark moved too quickly! 10.016271535325131,0.8245767040478995,1.8966700940191004
+[28Aug2026 03:20:51.758] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 03:21:01.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 03:22:27.452] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 03:22:28.889] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 03:23:30.057] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 03:23:37.303] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was struck by lightning
+[28Aug2026 03:23:43.509] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> }
+[28Aug2026 03:23:47.658] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -324.5 71.0 3129.5 minecraft:overworld
+[28Aug2026 03:24:00.498] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was slain by Dread Knight
+[28Aug2026 03:24:07.575] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 03:26:18.454] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was struck by lightning whilst fighting Dread Beast
+[28Aug2026 03:26:19.597] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was slain by Dread Knight
+[28Aug2026 03:26:23.614] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -337.5 71.0 3129.5 minecraft:overworld
+[28Aug2026 03:26:31.119] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was slain by Dread Knight
+[28Aug2026 03:26:34.463] [Server thread/INFO] [journeymap/]: Uzielcrak77 teleported to -317.5 69.0 3127.5 minecraft:overworld
+[28Aug2026 03:26:48.215] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -334.5 71.0 3128.5 minecraft:overworld
+[28Aug2026 03:26:50.746] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was slain by Dread Knight
+[28Aug2026 03:27:01.000] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark lost connection: Timed out
+[28Aug2026 03:27:01.000] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark left the game
+[28Aug2026 03:27:49.071] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jr_dark[/10.13.238.142:59628] logged in with entity id 28725 at (-334.5, 71.0, 3128.5)
+[28Aug2026 03:27:49.078] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Jr_dark
+[28Aug2026 03:27:49.085] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark joined the game
+[28Aug2026 03:27:49.132] [Server thread/INFO] [Jade/]: Syncing config to Jr_dark (e4a447b7-80d3-39bc-aee9-7217339ad2d7)
+[28Aug2026 03:27:52.816] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 03:27:59.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 03:28:29.083] [Server thread/WARN] [net.minecraft.server.level.ServerPlayerGameMode/]: Mismatch in destroy block pos: BlockPos{x=-337, y=71, z=3129} BlockPos{x=-337, y=71, z=3130}
+[28Aug2026 03:29:07.760] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 03:30:17.102] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was slain by Dread Ghoul
+[28Aug2026 03:30:22.440] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -338.5 71.0 3129.5 minecraft:overworld
+[28Aug2026 03:31:03.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 03:31:06.010] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 03:31:18.705] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 03:31:33.067] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 03:32:06.401] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was slain by Dread Ghoul
+[28Aug2026 03:32:38.725] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set the time to 1000]
+[28Aug2026 03:32:50.288] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 03:33:19.021] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 8.225980197534284,0.0,-6.297840493979493
+[28Aug2026 03:33:19.022] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 9.535961487362613,0.0,-7.327113823462696
+[28Aug2026 03:33:19.022] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 10.877008286795274,0.0,-8.42071864275431
+[28Aug2026 03:33:19.023] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 12.210774087688037,0.0,-9.600196902501466
+[28Aug2026 03:33:19.023] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 13.50690284605929,0.0,-10.874249496435368
+[28Aug2026 03:33:19.072] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 7.722959704741982,0.0,-6.9325586350501
+[28Aug2026 03:33:19.095] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 8.765942102050474,0.0,-8.152710606998426
+[28Aug2026 03:33:19.163] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 9.685852576476577,0.0,-9.228884646257029
+[28Aug2026 03:33:19.211] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 10.497213614920383,0.0,-10.178070148883307
+[28Aug2026 03:33:19.253] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 11.212834050827837,0.0,-11.015251762199568
+[28Aug2026 03:33:19.304] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 11.844011275298215,0.0,-11.753645945144399
+[28Aug2026 03:33:19.353] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 12.400709587281085,0.0,-12.404909614501776
+[28Aug2026 03:33:19.408] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 12.891717498449964,0.0,-12.979324170874861
+[28Aug2026 03:33:19.459] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 13.287965947117357,0.0,-13.387565669835567
+[28Aug2026 03:33:19.486] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 13.611061935864711,0.0,-13.645948580030563
+[28Aug2026 03:33:19.575] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 13.876258820851262,0.0,-13.770664003028742
+[28Aug2026 03:33:19.606] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 13.849383873569195,0.0,-13.818868796357947
+[28Aug2026 03:33:19.637] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 13.56706754149684,0.0,-13.791075333988829
+[28Aug2026 03:33:19.689] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 13.061895883706882,0.0,-13.687811111605242
+[28Aug2026 03:33:19.788] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 12.362224557188995,0.0,-13.511572515046737
+[28Aug2026 03:33:19.840] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 11.491004522853018,0.0,-13.270970520466108
+[28Aug2026 03:33:19.866] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 10.46847852822151,0.0,-12.97360000883009
+[28Aug2026 03:33:19.889] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 9.304399242590478,0.0,-12.726318508508484
+[28Aug2026 03:33:19.959] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 8.015469954297828,0.0,-12.523215516166147
+[28Aug2026 03:33:20.005] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 6.878634322023686,0.0,-12.344078676920162
+[28Aug2026 03:33:20.064] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 5.875945294357905,0.0,-12.18607998470543
+[28Aug2026 03:33:20.105] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 4.991573571956678,0.0,-12.04672513817195
+[28Aug2026 03:33:20.156] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 4.211557712798822,0.0,-11.923814163529642
+[28Aug2026 03:33:20.206] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 3.523583725021581,0.0,-11.815406683894707
+[28Aug2026 03:33:20.263] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 3.0174276533737725,0.0,-11.689642301338608
+[28Aug2026 03:33:20.313] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 2.6720608881047383,0.0,-11.550029156525852
+[28Aug2026 03:33:20.358] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 2.395500862180768,0.0,-11.160362682604955
+[28Aug2026 03:33:20.413] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! 2.1816973088929785,0.0,-10.550375065501612
+[28Aug2026 03:33:29.738] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -4.643259358604439,0.0,-9.258579383704273
+[28Aug2026 03:33:29.739] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -5.351939453505793,0.0,-10.766086827778508
+[28Aug2026 03:33:29.739] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -6.069800839563868,0.0,-12.341405172404393
+[28Aug2026 03:33:29.739] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -6.785005148933578,0.0,-13.980330403451717
+[28Aug2026 03:33:29.740] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.4898842647034485,0.0,-15.67784175736142
+[28Aug2026 03:33:29.740] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.11158764481246,0.0,-17.175046771509642
+[28Aug2026 03:33:29.740] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.65993002606865,0.0,-18.49558159398839
+[28Aug2026 03:33:29.740] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -9.14356800633658,0.0,-19.660293307414577
+[28Aug2026 03:33:30.530] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -5.616863434456548,0.0,-12.86288560058847
+[28Aug2026 03:33:30.530] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -5.9930970266185,0.0,-13.768942795543808
+[28Aug2026 03:33:30.531] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -6.324935054905325,0.0,-14.568085241494373
+[28Aug2026 03:33:30.531] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -6.617616195854339,0.0,-15.272928878822768
+[28Aug2026 03:33:30.531] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -6.875760962171341,0.0,-15.894600966946655
+[28Aug2026 03:33:30.531] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.10344464606294,0.0,-16.44291574867202
+[28Aug2026 03:33:30.532] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.304261655255345,0.0,-16.92652938615356
+[28Aug2026 03:33:30.532] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.481382257363066,0.0,-17.353076614412203
+[28Aug2026 03:33:30.532] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.63760262842203,0.0,-17.729291269736677
+[28Aug2026 03:33:30.533] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.775388995696062,0.0,-18.06111259573254
+[28Aug2026 03:33:30.533] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.8969165716317775,0.0,-18.353779005261003
+[28Aug2026 03:33:30.533] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.004103893607066,0.0,-18.611910778465244
+[28Aug2026 03:33:30.534] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.09864311158924,0.0,-18.839583002431482
+[28Aug2026 03:33:30.534] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.182026701849566,0.0,-19.0403899039693
+[28Aug2026 03:33:30.534] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.255571028459144,0.0,-19.21750159112571
+[28Aug2026 03:33:30.534] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.32043712452878,0.0,-19.37371409919797
+[28Aug2026 03:33:30.535] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.377649021262187,0.0,-19.511493531317683
+[28Aug2026 03:33:30.535] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.42810991418105,0.0,-19.63301499044701
+[28Aug2026 03:33:30.535] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.472616421735495,0.0,-19.740196917399317
+[28Aug2026 03:33:30.535] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.511871161398517,0.0,-19.83473137697092
+[28Aug2026 03:33:30.536] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.546493841781285,0.0,-19.918110770313433
+[28Aug2026 03:33:30.536] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.577031045878925,0.0,-19.991651395241206
+[28Aug2026 03:33:30.536] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.60396485989304,0.0,-20.05651422642768
+[28Aug2026 03:33:30.536] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.627720483853466,0.0,-20.11372324353397
+[28Aug2026 03:33:30.536] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.648672944186558,0.0,-20.164181596621802
+[28Aug2026 03:33:30.537] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.66715301420038,0.0,-20.208685864045492
+[28Aug2026 03:33:30.537] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.683452435952574,0.0,-20.247938627912845
+[28Aug2026 03:33:30.537] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.697828525938007,0.0,-20.28255956564408
+[28Aug2026 03:33:30.537] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.710508237305135,0.0,-20.313095232722844
+[28Aug2026 03:33:30.538] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.721691742730968,0.0,-20.34002769108656
+[28Aug2026 03:33:30.538] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.731555594516522,0.0,-20.36378211936335
+[28Aug2026 03:33:30.538] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.740255511791418,0.0,-20.384733525103456
+[28Aug2026 03:33:30.538] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.747928838827875,0.0,-20.403212664966304
+[28Aug2026 03:33:30.538] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.75469671327403,0.0,-20.419511266325117
+[28Aug2026 03:33:30.539] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.506124934149454,0.0,-20.369166968196623
+[28Aug2026 03:33:30.539] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -8.037453183496723,0.0,-20.242521392464823
+[28Aug2026 03:33:30.539] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -7.377570219941504,0.0,-20.040208807425188
+[28Aug2026 03:33:30.539] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -6.795553446085819,0.0,-19.86176910742006
+[28Aug2026 03:33:30.540] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -6.282214651545075,0.0,-19.70438529201556
+[28Aug2026 03:33:30.540] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -5.829449834760169,0.0,-19.56557276682861
+[28Aug2026 03:33:30.540] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -5.43011126635588,0.0,-19.443140119613872
+[28Aug2026 03:33:30.540] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -5.077894649023278,0.0,-19.335154524770587
+[28Aug2026 03:33:30.541] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -4.76723959253593,0.0,-19.23991123011865
+[28Aug2026 03:33:30.541] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -4.493241832714091,0.0,-19.15590664423553
+[28Aug2026 03:33:30.541] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -4.251575808551252,0.0,-19.081814599486734
+[28Aug2026 03:33:30.541] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -4.038426375239624,0.0,-19.01646541601849
+[28Aug2026 03:33:30.541] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.850428575058743,0.0,-18.9588274361995
+[28Aug2026 03:33:30.542] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.684614515299188,0.0,-18.90799073799917
+[28Aug2026 03:33:30.542] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.538366514591303,0.0,-18.86315277018639
+[28Aug2026 03:33:30.542] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.409375777966943,0.0,-18.823605682575362
+[28Aug2026 03:33:30.542] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.2956059482642672,0.0,-18.788725151302515
+[28Aug2026 03:33:30.542] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.195260958466463,0.0,-18.757960522719713
+[28Aug2026 03:33:30.543] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.10675667746483,0.0,-18.730826120309757
+[28Aug2026 03:33:30.543] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -3.028695901621404,0.0,-18.706893577384108
+[28Aug2026 03:33:30.543] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.9598462973274877,0.0,-18.685785074523665
+[28Aug2026 03:33:30.543] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.899120946340247,0.0,-18.6671673750011
+[28Aug2026 03:33:30.544] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.845561186769487,0.0,-18.65074656402203
+[28Aug2026 03:33:30.544] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.798321478828086,0.0,-18.636263408738614
+[28Aug2026 03:33:30.544] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.7566560564237648,0.0,-18.623489265778517
+[28Aug2026 03:33:30.544] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.7199071538631756,0.0,-18.6122224716878
+[28Aug2026 03:33:30.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.687494621804717,0.0,-18.602285159299754
+[28Aug2026 03:33:30.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.658906768529164,0.0,-18.593520449773678
+[28Aug2026 03:33:30.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.633692281940114,0.0,-18.585789975971693
+[28Aug2026 03:33:30.545] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.6114531047686,0.0,-18.57897169807802
+[28Aug2026 03:33:30.546] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.5918381505032926,0.0,-18.572957976975886
+[28Aug2026 03:33:30.546] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.574537760841281,0.0,-18.56765387496398
+[28Aug2026 03:33:30.546] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.559278817159395,0.0,-18.562975656989238
+[28Aug2026 03:33:30.547] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.5458204288319735,0.0,-18.55884946873539
+[28Aug2026 03:33:30.547] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.5339501303271845,0.0,-18.555210170695773
+[28Aug2026 03:33:30.567] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.52348052704599,0.0,-18.55200030982496
+[28Aug2026 03:33:30.596] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.514246336951942,0.0,-18.55200030982496
+[28Aug2026 03:33:30.658] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.5061017812890327,0.0,-18.55200030982496
+[28Aug2026 03:33:30.712] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.498918283194314,0.0,-18.55200030982496
+[28Aug2026 03:33:30.762] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4925824378747734,0.0,-18.55200030982496
+[28Aug2026 03:33:30.811] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4869942223029398,0.0,-18.55200030982496
+[28Aug2026 03:33:30.857] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4820654161686093,0.0,-18.55200030982496
+[28Aug2026 03:33:30.920] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4777182091581267,0.0,-18.55200030982496
+[28Aug2026 03:33:30.955] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4738839725748676,0.0,-18.55200030982496
+[28Aug2026 03:33:31.028] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4705021759084502,0.0,-18.55200030982496
+[28Aug2026 03:33:31.060] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4705021759084502,0.0,-18.55200030982496
+[28Aug2026 03:33:31.107] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4705021759084502,0.0,-18.55200030982496
+[28Aug2026 03:33:31.159] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Ice Dragon (vehicle of Jr_dark) moved too quickly! -2.4705021759084502,0.0,-18.55200030982496
+[28Aug2026 03:35:56.706] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 03:36:45.988] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 03:38:11.168] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 03:38:20.039] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 03:39:19.275] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 35 entities]
+[28Aug2026 03:39:41.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 5 entities]
+[28Aug2026 03:39:49.806] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 23 entities]
+[28Aug2026 03:39:57.373] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 41 entities]
+[28Aug2026 03:40:23.613] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 59 entities]
+[28Aug2026 03:40:45.565] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 6 entities]
+[28Aug2026 03:41:01.763] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed Dread Beast]
+[28Aug2026 03:41:12.982] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 4 entities]
+[28Aug2026 03:41:36.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed Dread Beast]
+[28Aug2026 03:42:00.916] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed Dread Knight]
+[28Aug2026 03:42:19.751] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 03:43:15.801] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 03:43:19.349] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [Another Brick in the Wall]
+[28Aug2026 03:45:06.122] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 03:45:17.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 03:46:26.751] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark didn't duck and cover
+[28Aug2026 03:46:49.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> j
+[28Aug2026 03:46:56.460] [Server thread/INFO] [journeymap/]: Jr_dark teleported to -268.5 74.0 3137.5 minecraft:overworld
+[28Aug2026 03:47:08.362] [Server thread/INFO] [journeymap/]: Uzielcrak77 teleported to -2788.5 70.0 -4961.5 minecraft:overworld
+[28Aug2026 03:47:11.424] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-183, -298], discarding
+[28Aug2026 03:47:11.425] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-182, -298], discarding
+[28Aug2026 03:47:11.427] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-184, -298], discarding
+[28Aug2026 03:47:11.534] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-185, -298], discarding
+[28Aug2026 03:47:11.535] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-186, -298], discarding
+[28Aug2026 03:48:09.829] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 03:48:21.506] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 03:49:05.140] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has reached the goal [I Am Become Death]
+[28Aug2026 03:49:32.456] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 2 entities]
+[28Aug2026 03:49:36.152] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 4 entities]
+[28Aug2026 03:49:50.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 8 entities]
+[28Aug2026 03:49:55.990] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 7 entities]
+[28Aug2026 03:50:00.539] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 7 entities]
+[28Aug2026 03:50:10.783] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 3 entities]
+[28Aug2026 03:50:19.964] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 3 entities]
+[28Aug2026 03:50:24.821] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed 3 entities]
+[28Aug2026 03:50:55.972] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed Dread Ghoul]
+[28Aug2026 03:50:59.935] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Killed Dread Beast]
+[28Aug2026 03:51:51.334] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 03:52:34.902] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Teleported Jr_dark to Uzielcrak77]
+[28Aug2026 03:52:51.491] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-156, -304], discarding
+[28Aug2026 03:52:51.517] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-156, -303], discarding
+[28Aug2026 03:52:53.369] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-155, -304], discarding
+[28Aug2026 03:52:53.370] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:52:53.371] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-155, -303], discarding
+[28Aug2026 03:52:55.037] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-154, -314], discarding
+[28Aug2026 03:52:55.039] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-154, -313], discarding
+[28Aug2026 03:52:56.885] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:52:56.885] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-153, -313], discarding
+[28Aug2026 03:52:56.886] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-153, -314], discarding
+[28Aug2026 03:52:58.584] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Uzielcrak77 moved too quickly! 30.973759461321606,9.108795616192623,2.0830623116480638
+[28Aug2026 03:52:59.712] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Uzielcrak77 moved too quickly! 32.10257616039098,3.8599909146476676,2.1589780404283374
+[28Aug2026 03:55:09.234] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 03:55:34.224] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark was killed
+[28Aug2026 03:55:34.224] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Killed Jr_dark]
+[28Aug2026 03:56:11.267] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 19027ms or 380 ticks behind
+[28Aug2026 03:56:11.319] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark moved too quickly! 8.961002516941335,-0.41999998688697815,-4.763128369763194
+[28Aug2026 03:56:11.339] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Uzielcrak77 moved too quickly! -6.057166131482973,1.1661092609382138,7.9954352755621585
+[28Aug2026 03:56:55.455] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 13164ms or 263 ticks behind
+[28Aug2026 03:57:03.826] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-190, -299], discarding
+[28Aug2026 03:57:03.828] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-189, -299], discarding
+[28Aug2026 03:57:04.104] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:06.497] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-186, -298], discarding
+[28Aug2026 03:57:06.498] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-185, -298], discarding
+[28Aug2026 03:57:06.499] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-184, -298], discarding
+[28Aug2026 03:57:06.500] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-190, -298], discarding
+[28Aug2026 03:57:06.501] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:06.501] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-189, -298], discarding
+[28Aug2026 03:57:06.502] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-183, -298], discarding
+[28Aug2026 03:57:06.503] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-182, -298], discarding
+[28Aug2026 03:57:07.335] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-183, -297], discarding
+[28Aug2026 03:57:07.337] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-182, -297], discarding
+[28Aug2026 03:57:07.338] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-186, -297], discarding
+[28Aug2026 03:57:07.339] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-185, -297], discarding
+[28Aug2026 03:57:07.340] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:ocean_sand_pyramid' in chunk [-184, -297], discarding
+[28Aug2026 03:57:08.083] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-176, -296], discarding
+[28Aug2026 03:57:08.084] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-175, -296], discarding
+[28Aug2026 03:57:08.940] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-176, -295], discarding
+[28Aug2026 03:57:08.941] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:08.941] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-175, -295], discarding
+[28Aug2026 03:57:13.084] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-184, -293], discarding
+[28Aug2026 03:57:13.092] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-166, -293], discarding
+[28Aug2026 03:57:13.093] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-165, -293], discarding
+[28Aug2026 03:57:13.094] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-173, -293], discarding
+[28Aug2026 03:57:13.095] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-172, -293], discarding
+[28Aug2026 03:57:13.130] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-183, -293], discarding
+[28Aug2026 03:57:14.024] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:14.025] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-172, -292], discarding
+[28Aug2026 03:57:14.031] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-173, -292], discarding
+[28Aug2026 03:57:14.033] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-166, -292], discarding
+[28Aug2026 03:57:14.034] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:14.035] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-165, -292], discarding
+[28Aug2026 03:57:14.092] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-184, -292], discarding
+[28Aug2026 03:57:14.137] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:14.137] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-183, -292], discarding
+[28Aug2026 03:57:15.927] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-173, -291], discarding
+[28Aug2026 03:57:15.928] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-172, -291], discarding
+[28Aug2026 03:57:15.930] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-190, -291], discarding
+[28Aug2026 03:57:21.340] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-191, -291], discarding
+[28Aug2026 03:57:21.731] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:21.732] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-172, -290], discarding
+[28Aug2026 03:57:21.735] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-173, -290], discarding
+[28Aug2026 03:57:21.775] [Server thread/WARN] [net.minecraft.world.entity.EntityType/]: Skipping Entity with id dontcry:stalker
+[28Aug2026 03:57:21.775] [Server thread/WARN] [net.minecraft.world.entity.EntityType/]: Skipping Entity with id the_one_who_watches:toww_hanging
+[28Aug2026 03:57:21.782] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:21.782] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-190, -290], discarding
+[28Aug2026 03:57:21.787] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-191, -290], discarding
+[28Aug2026 03:57:24.087] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-193, -294], discarding
+[28Aug2026 03:57:24.239] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:24.240] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-193, -293], discarding
+[28Aug2026 03:57:30.934] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-194, -293], discarding
+[28Aug2026 03:57:30.936] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-194, -294], discarding
+[28Aug2026 03:57:30.951] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:31.009] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:31.011] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-192, -286], discarding
+[28Aug2026 03:57:31.012] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-191, -286], discarding
+[28Aug2026 03:57:31.015] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-195, -285], discarding
+[28Aug2026 03:57:31.016] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-192, -285], discarding
+[28Aug2026 03:57:31.017] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:31.017] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-191, -285], discarding
+[28Aug2026 03:57:31.021] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:31.035] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:31.091] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:40.057] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:40.091] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:57:40.873] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 03:59:51.129] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Removed every effect from Uzielcrak77]
+[28Aug2026 04:00:05.766] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 04:02:27.515] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [The Heart and the Flame]
+[28Aug2026 04:03:43.312] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 04:04:19.469] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 04:04:20.328] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-169, -285], discarding
+[28Aug2026 04:04:20.370] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-168, -285], discarding
+[28Aug2026 04:04:20.438] [Server thread/ERROR] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Unknown structure start: watching:torch_cave
+[28Aug2026 04:04:20.444] [Server thread/WARN] [net.minecraft.world.level.chunk.storage.ChunkSerializer/]: Found reference to unknown structure 'watching:torch_cave' in chunk [-186, -275], discarding
+[28Aug2026 04:04:55.010] [Server thread/INFO] [journeymap/]: Uzielcrak77 teleported to -2788.5 70.0 -4961.5 minecraft:overworld
+[28Aug2026 04:05:16.780] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set the time to 1000]
+[28Aug2026 04:06:18.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 04:06:24.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Teleported Uzielcrak77 to Jr_dark]
+[28Aug2026 04:06:33.001] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 04:09:24.805] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was turned to ice by Jr_dark
+[28Aug2026 04:10:09.004] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was turned to ice by Jr_dark
+[28Aug2026 04:10:23.562] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [Forged in Flame]
+[28Aug2026 04:11:56.950] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was turned to ice by Jr_dark
+[28Aug2026 04:13:09.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 04:13:29.419] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 04:13:49.002] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [Forged in Flame]
+[28Aug2026 04:14:24.162] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set the time to 1000]
+[28Aug2026 04:18:18.957] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 04:18:56.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 04:19:35.133] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 04:19:40.928] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 04:19:58.553] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark lost connection: Timed out
+[28Aug2026 04:19:58.553] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark left the game
+[28Aug2026 04:20:46.309] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: Disconnecting com.mojang.authlib.GameProfile@293e74e2[id=<null>,name=Jr_dark,properties={},legacy=false] (/10.13.238.142:59953): Took too long to log in
+[28Aug2026 04:20:46.315] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@293e74e2[id=<null>,name=Jr_dark,properties={},legacy=false] (/10.13.238.142:59953) lost connection: Took too long to log in
+[28Aug2026 04:20:46.340] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[28Aug2026 04:22:31.267] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jr_dark[/10.13.238.142:57776] logged in with entity id 49970 at (-4234.547276523519, 65.0, -892.4998120363258)
+[28Aug2026 04:22:31.272] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Jr_dark
+[28Aug2026 04:22:31.278] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark joined the game
+[28Aug2026 04:22:31.319] [Server thread/INFO] [Jade/]: Syncing config to Jr_dark (e4a447b7-80d3-39bc-aee9-7217339ad2d7)
+[28Aug2026 04:23:43.656] [Server thread/WARN] [net.minecraft.server.MinecraftServer/]: Can't keep up! Is the server overloaded? Running 11866ms or 237 ticks behind
+[28Aug2026 04:23:43.673] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark moved too quickly! 8.26375286905386,0.9564643798524912,-5.859004096934086
+[28Aug2026 04:23:43.687] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Uzielcrak77 moved too quickly! -3.251483507838202,-0.5800000131130219,-9.552855844263945
+[28Aug2026 04:24:33.671] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set the time to 1000]
+[28Aug2026 04:27:03.659] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 04:27:36.759] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has made the advancement [Draconic Evolution]
+[28Aug2026 04:28:34.917] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 04:28:45.071] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark moved too quickly! 9.992538830514604,-0.49520087700592796,0.8859393505225626
+[28Aug2026 04:28:54.603] [Server thread/WARN] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark was kicked for floating too long!
+[28Aug2026 04:28:54.654] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark lost connection: Flying is not enabled on this server
+[28Aug2026 04:28:54.654] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark left the game
+[28Aug2026 04:29:16.270] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jr_dark[/10.13.238.142:57820] logged in with entity id 51048 at (-4246.269651001555, 70.02442408821369, -888.9667865988412)
+[28Aug2026 04:29:16.274] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Jr_dark
+[28Aug2026 04:29:16.280] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark joined the game
+[28Aug2026 04:29:16.316] [Server thread/INFO] [Jade/]: Syncing config to Jr_dark (e4a447b7-80d3-39bc-aee9-7217339ad2d7)
+[28Aug2026 04:30:03.750] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was frozen by Jr_dark
+[28Aug2026 04:31:08.317] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 was slain by Jr_dark
+[28Aug2026 04:32:56.962] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 04:33:05.609] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 04:33:51.935] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Creative Mode]
+[28Aug2026 04:34:14.617] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set own game mode to Survival Mode]
+[28Aug2026 04:34:36.010] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 04:35:08.654] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [Poseidon, God of the Seas]
+[28Aug2026 04:35:41.248] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Unemployed'/41150, l='ServerLevel[world]', x=-4269.56, y=64.50, z=-899.22] died, message: 'Unemployed was pricked to death'
+[28Aug2026 04:43:45.637] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/41012, l='ServerLevel[world]', x=-4212.26, y=65.00, z=-910.28] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:43:54.428] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/53826, l='ServerLevel[world]', x=-4212.24, y=65.00, z=-910.03] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:43:59.206] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 04:44:14.434] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/53872, l='ServerLevel[world]', x=-4212.10, y=65.00, z=-909.55] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:44:21.887] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/53889, l='ServerLevel[world]', x=-4211.49, y=65.00, z=-911.36] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:44:28.134] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/53901, l='ServerLevel[world]', x=-4212.24, y=65.00, z=-909.74] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:44:44.282] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/53913, l='ServerLevel[world]', x=-4212.07, y=65.00, z=-909.48] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:44:52.963] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 04:44:55.282] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/53944, l='ServerLevel[world]', x=-4211.61, y=65.00, z=-910.80] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:45:05.634] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/53973, l='ServerLevel[world]', x=-4211.77, y=65.00, z=-910.59] died, message: 'Librarian was slain by Jr_dark'
+[28Aug2026 04:46:51.190] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 04:51:03.110] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 04:53:39.759] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55294, l='ServerLevel[world]', x=-4208.27, y=65.00, z=-911.10] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:53:52.606] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55446, l='ServerLevel[world]', x=-4208.02, y=65.00, z=-911.04] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:54:07.180] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 04:54:26.660] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55466, l='ServerLevel[world]', x=-4209.15, y=65.00, z=-910.06] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:54:36.308] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55561, l='ServerLevel[world]', x=-4207.75, y=65.00, z=-909.77] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:54:51.455] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55587, l='ServerLevel[world]', x=-4208.73, y=65.00, z=-910.38] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:55:04.759] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55613, l='ServerLevel[world]', x=-4208.68, y=65.00, z=-910.69] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:55:33.005] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55723, l='ServerLevel[world]', x=-4209.01, y=65.00, z=-910.02] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:55:49.807] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55787, l='ServerLevel[world]', x=-4208.63, y=65.00, z=-909.68] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:55:56.205] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55792, l='ServerLevel[world]', x=-4208.03, y=65.00, z=-909.67] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:01.858] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55815, l='ServerLevel[world]', x=-4207.66, y=65.00, z=-909.44] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:08.507] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55827, l='ServerLevel[world]', x=-4208.46, y=65.00, z=-909.45] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:15.305] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55834, l='ServerLevel[world]', x=-4207.45, y=65.00, z=-910.58] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:20.706] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55844, l='ServerLevel[world]', x=-4209.23, y=65.00, z=-909.39] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:29.607] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55853, l='ServerLevel[world]', x=-4209.25, y=65.00, z=-909.75] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:37.606] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55867, l='ServerLevel[world]', x=-4207.68, y=65.00, z=-909.43] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:43.557] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55894, l='ServerLevel[world]', x=-4209.13, y=65.00, z=-909.34] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:49.959] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55904, l='ServerLevel[world]', x=-4209.44, y=65.00, z=-909.31] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:56:57.157] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55910, l='ServerLevel[world]', x=-4207.62, y=65.00, z=-909.49] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:57:02.964] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55920, l='ServerLevel[world]', x=-4208.47, y=65.00, z=-909.32] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:57:09.363] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55932, l='ServerLevel[world]', x=-4209.30, y=65.00, z=-909.64] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:57:14.604] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55944, l='ServerLevel[world]', x=-4209.41, y=65.00, z=-909.64] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:57:23.062] [Server thread/INFO] [net.minecraft.world.entity.npc.Villager/]: Villager Villager['Librarian'/55954, l='ServerLevel[world]', x=-4207.30, y=65.00, z=-911.40] died, message: 'Librarian was slain by Jr_dark using [rompeculos3000]'
+[28Aug2026 04:57:38.624] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> bro
+[28Aug2026 04:57:40.322] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> pera
+[28Aug2026 04:57:52.466] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> yyaya tranqui bro te espero
+[28Aug2026 04:58:00.262] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 04:58:32.168] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Creative Mode]
+[28Aug2026 05:01:01.081] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Set own game mode to Survival Mode]
+[28Aug2026 05:02:31.161] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:04:14.709] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:04:27.204] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[28Aug2026 05:04:27.262] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: a/sy te estoy viendo<--[HERE]
+[28Aug2026 05:04:38.065] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] te estoy viendo
+[28Aug2026 05:04:44.778] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> lo se bro
+[28Aug2026 05:04:54.731] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Uzielcrak77: Set the time to 1000]
+[28Aug2026 05:05:41.306] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:06:11.359] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:06:38.963] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> vro
+[28Aug2026 05:06:42.656] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> se me murio el cel
+[28Aug2026 05:06:45.857] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xddddddd
+[28Aug2026 05:06:51.811] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> ere gay
+[28Aug2026 05:06:58.757] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> tu eres gay
+[28Aug2026 05:07:03.881] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> ostias mira
+[28Aug2026 05:07:07.860] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> mira afuera
+[28Aug2026 05:07:07.929] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> aver
+[28Aug2026 05:07:19.974] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> ostias
+[28Aug2026 05:07:23.554] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> que graficos
+[28Aug2026 05:07:25.220] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xddddddd
+[28Aug2026 05:07:34.761] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark has reached the goal [Captain Nemo]
+[28Aug2026 05:07:51.436] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xd
+[28Aug2026 05:08:01.208] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> asi no era bro
+[28Aug2026 05:08:05.304] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xdddddd
+[28Aug2026 05:08:10.704] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> naguaraaa
+[28Aug2026 05:08:15.967] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 has made the advancement [The Secret Ingredient]
+[28Aug2026 05:08:24.432] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> tomatelo bro
+[28Aug2026 05:08:38.108] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> este no bro
+[28Aug2026 05:08:46.878] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xd
+[28Aug2026 05:08:54.635] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:09:27.115] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> bueno mno
+[28Aug2026 05:09:30.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> me voy ppp
+[28Aug2026 05:09:36.071] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> ala
+[28Aug2026 05:09:41.114] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> encantas lo que vas a encantar jejkejke
+[28Aug2026 05:09:44.624] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> tal vez en un rato
+[28Aug2026 05:09:51.864] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> se cierre el server
+[28Aug2026 05:09:53.970] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> ya pe mano yo me quedare un ratico mas
+[28Aug2026 05:09:55.884] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> yaya
+[28Aug2026 05:09:59.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> porqe lo tengo en cel
+[28Aug2026 05:10:03.071] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> esta bien mano chvre pe
+[28Aug2026 05:10:05.322] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> sino conversa con jhon p
+[28Aug2026 05:10:08.389] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> mmmm con razn pe
+[28Aug2026 05:10:09.886] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> ta despierto el pata
+[28Aug2026 05:10:11.754] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xd
+[28Aug2026 05:10:13.703] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> yayya
+[28Aug2026 05:10:22.608] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> ya pe mano alamos cdt mano saludos
+[28Aug2026 05:10:27.328] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> te quiero manito
+[28Aug2026 05:10:28.568] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> velda mañana voy agregar mods nuevos
+[28Aug2026 05:10:32.359] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> vava
+[28Aug2026 05:10:36.587] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> va mno yo tmb te quiero alamos p
+[28Aug2026 05:10:52.709] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> vavva alamos beba
+[28Aug2026 05:10:57.656] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Uzielcrak77> vavava bye
+[28Aug2026 05:10:59.305] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Uzielcrak77 lost connection: Disconnected
+[28Aug2026 05:10:59.305] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Uzielcrak77 left the game
+[28Aug2026 05:11:02.856] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:12:14.920] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:15:29.008] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:16:36.982] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:17:32.363] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] te sigo viendo
+[28Aug2026 05:17:40.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xdddddd
+[28Aug2026 05:18:02.211] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] xd
+[28Aug2026 05:18:48.411] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] oe mno le puedo meter mod de the last of us?
+[28Aug2026 05:19:15.877] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> xdddd
+[28Aug2026 05:19:19.956] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> a que mano
+[28Aug2026 05:19:24.662] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> a este server ?
+[28Aug2026 05:19:32.062] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] le hago lore de qe provienen del espaio
+[28Aug2026 05:19:37.868] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] si edte
+[28Aug2026 05:19:38.456] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> mmmm
+[28Aug2026 05:19:49.210] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> primero hay que matarnos los jefes de aca
+[28Aug2026 05:19:51.580] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> todo
+[28Aug2026 05:19:55.379] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> fulll
+[28Aug2026 05:20:01.617] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> hacer unas casas ufffffff
+[28Aug2026 05:20:03.854] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> granjas
+[28Aug2026 05:20:07.707] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> todo
+[28Aug2026 05:20:19.807] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] <Jr_dark> que sea como nuestro mundo hard
+[28Aug2026 05:21:23.329] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Jr_dark: Gave 1000 experience points to Jr_dark]
+[28Aug2026 05:21:49.658] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] va toy pensando lore escucha ,entonces despues de los acotcimiento de los bosses aparecio una nueva amenza dl espacio un parasito repr/say yy vienen en hova  va osy l ptoy pensando loren escucha ,entonces deeces despues de nlos tiaacotecimiento de los bosses aparecio una nueva amenza del espacio un parasito reproductor de hongos
+[28Aug2026 05:21:59.805] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] opina jkjejej
+[28Aug2026 05:22:22.105] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Jr_dark lost connection: Timed out
+[28Aug2026 05:22:22.105] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark left the game
+[28Aug2026 05:22:41.143] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: [Not Secure] [Server] JJAJAJJAJAJAJAJAJ
+[28Aug2026 05:22:48.193] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Unknown or incomplete command, see below for error
+[28Aug2026 05:22:48.194] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: SE SALIA<--[HERE]
+[28Aug2026 05:23:26.393] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@16f173e1[id=<null>,name=Jr_dark,properties={},legacy=false] (/10.13.238.142:58111) lost connection: Disconnected
+[28Aug2026 05:24:16.043] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: Disconnecting com.mojang.authlib.GameProfile@21477087[id=<null>,name=Jr_dark,properties={},legacy=false] (/10.13.238.142:58140): Took too long to log in
+[28Aug2026 05:24:16.044] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@21477087[id=<null>,name=Jr_dark,properties={},legacy=false] (/10.13.238.142:58140) lost connection: Took too long to log in
+[28Aug2026 05:24:16.093] [Server thread/WARN] [net.minecraft.network.Connection/]: handleDisconnection() called twice
+[28Aug2026 05:24:39.246] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@3e5314cc[id=<null>,name=Jr_dark,properties={},legacy=false] (/10.13.238.142:58151) lost connection: Disconnected
+[28Aug2026 05:25:17.193] [Server thread/INFO] [net.minecraft.server.network.ServerLoginPacketListenerImpl/]: com.mojang.authlib.GameProfile@6903f2a0[id=<null>,name=Jr_dark,properties={},legacy=false] (/10.13.238.142:58156) lost connection: Disconnected
+[28Aug2026 05:25:41.756] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Jr_dark[/10.13.238.142:55382] logged in with entity id 59461 at (-4240.41563577269, 65.0, -895.5553503232208)
+[28Aug2026 05:25:41.760] [Server thread/INFO] [ModernFix/]: Using enhanced recipe sync for player Jr_dark
+[28Aug2026 05:25:41.766] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Jr_dark joined the game
+[28Aug2026 05:25:41.774] [Server thread/INFO] [Jade/]: Syncing config to Jr_dark (e4a447b7-80d3-39bc-aee9-7217339ad2d7)

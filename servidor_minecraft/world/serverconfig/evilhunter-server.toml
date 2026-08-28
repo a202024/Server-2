@@ -1,0 +1,40 @@
+
+[evilhunter_settings]
+	#Enable or disable meta-story phases (Phase 2-7). If false, only Phase 1 is active.
+	enablePhases = true
+	#Enable or disable vanilla post-process shaders during jumpscares and chaos events. Default is true.
+	enableVanillaShaders = true
+	#Multiplier for random event frequency. 1.0 is default, 2.0 is twice as often, 0.5 is twice as rare.
+	#Range: 0.1 ~ 10.0
+	eventFrequencyMultiplier = 1.0
+	#Hunter base spawn interval in ticks. Default is 24000 (20 mins). If phases are off, default is 48000 (40 mins).
+	#Range: 1200 ~ 100000
+	hunterSpawnIntervalTicks = 24000
+	#Phase 2 duration in ticks (before Crying Woman approaches). Default is 20000 (~16 mins).
+	#Range: 1000 ~ 100000
+	phase2Duration = 20000
+	#Phase 3 duration in ticks (after killing woman, before meat phase). Default is 20000 (~16 mins).
+	#Range: 1000 ~ 100000
+	phase3Duration = 20000
+	#Phase 4 total duration in ticks (including Chaos and Peace). Default is 6000 (5 mins).
+	#Range: 1200 ~ 50000
+	phase4Duration = 6000
+	#Phase 4 Chaos sub-phase (first part) duration in ticks. Default is 1200 (1 min).
+	#Range: 200 ~ 10000
+	phase4ChaosDuration = 1200
+	#Average ticks interval for ambient laugh in Phase 2. Default is 1200.
+	#Range: 100 ~ 10000
+	phase2LaughChance = 1200
+	#Average ticks interval for world glitch event in Phase 2. Default is 5400.
+	#Range: 500 ~ 50000
+	phase2GlitchChance = 5400
+	#Ritual Bossfight: Defend Altar phase duration in ticks. Default is 900.
+	#Range: 100 ~ 10000
+	bossfightDefendDuration = 900
+	#Ritual Bossfight: Dodge Projectiles phase duration in ticks. Default is 400.
+	#Range: 100 ~ 10000
+	bossfightDodgeDuration = 400
+	#Ritual Bossfight: Break Shield phase duration in ticks. Default is 900.
+	#Range: 100 ~ 10000
+	bossfightShieldDuration = 900
+
